@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: portfolioConfig.seo.title,
     description: portfolioConfig.seo.description,
+    url: 'https://mubaidjavaid.vercel.app',
     images: [portfolioConfig.seo.ogImage],
     type: 'website'
   },
@@ -33,7 +34,8 @@ export const metadata: Metadata = {
   icons: {
     icon: '/mubaidjavaid.png',
     apple: '/mubaidjavaid.png'
-  }
+  },
+  metadataBase: new URL('https://mubaidjavaid.vercel.app')
 }
 
 export default function RootLayout ({
